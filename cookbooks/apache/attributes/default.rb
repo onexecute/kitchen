@@ -2,6 +2,7 @@ default["apache"]["sites"]["webserver"] = { "site_title" => "webserver website c
 default["apache"]["sites"]["webserver2b"] = { "site_title" => "webserver2b website coming soon",  "port" => 80, "domain" => "webserver2b.localdomain.org" }
 default["apache"]["sites"]["webserver3b"] = { "site_title" => "webserver3b website coming soon", "port" => 80, "domain" => "webserver3b.localdomain.org" }
 
+default["author"]["name"] = "Charles"
 case node["platform"]
 when "centos"
 	default["apache"]["package"] = "httpd"
